@@ -5,7 +5,7 @@ const { log } = require('./log')
 
 const { stderr } = process
 
-const kPrefix = ' warn: '
+const kPrefix = 'warn:  '
 
 /**
  * Prints a formatted warn message to stderr.

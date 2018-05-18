@@ -5,7 +5,7 @@ const { log } = require('./log')
 
 const { stdout } = process
 
-const kPrefix = ' info: '
+const kPrefix = 'info:  '
 
 /**
  * Prints a formatted info message to stdout.

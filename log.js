@@ -1,5 +1,6 @@
 'use strict'
 
+const { underline, dim, bgWhite, bold, black } = require('chalk')
 const util = require('util')
 
 const { stdout } = process
@@ -27,8 +28,13 @@ function log(stream, prefix, format, ...message) {
 
   message = message.filter((m) => undefined !== m)
   const string = util.format(prefix + format, ...message)
+
+  stream.write(' ')
+  stream.write(bold(black('ara:')))
+  stream.write(' ')
   stream.write(string)
   stream.write('\n')
+
   return string
 }
 
