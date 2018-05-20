@@ -27,11 +27,12 @@ function log(stream, prefix, format, ...message) {
   if (!format) { format = '' }
 
   message = message.filter((m) => undefined !== m)
-  const string = util.format(prefix + format, ...message)
+  const string = util.format(format, ...message)
 
   stream.write(' ')
   stream.write(bold(black('ara:')))
   stream.write(' ')
+  stream.write(prefix)
   stream.write(string)
   stream.write('\n')
 
