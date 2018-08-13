@@ -6,7 +6,7 @@ Logging functions for Ara modules so logging is consistent
 ## Installation
 
 ```sh
-$ npm install ara-console
+$ npm install arablocks/ara-console
 ```
 
 ## API
