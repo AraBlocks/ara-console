@@ -1,12 +1,23 @@
 ara-console
 ===========
 
-Logging functions for Ara modules so logging is consistent
+Logging functions for Ara modules to ensure consistent console logs.
+
+## Status
+**Stable**
 
 ## Installation
 
 ```sh
 $ npm install arablocks/ara-console
+```
+
+## Example
+
+Print out examples of all logs.
+
+```sh
+$ node example.js
 ```
 
 ## API
@@ -17,7 +28,7 @@ several Ara modules.
 ### `console.log(stream, prefix, format, ...message)`
 
 Writes a formatted message with a prefix to a given
-stream like stdout or stderr.
+stream like `stdout` or `stderr`.
 
 ```js
 const { log } = require('ara-console')
@@ -26,7 +37,7 @@ log(process.stdout, 'info: ', '%s %s', someMessage, otherMessage)
 
 ### `console.error(format, ...message)`
 
-Prints a formatted error message to stderr.
+Prints a formatted error message to `stderr`.
 
 ```js
 const { error } = require('ara-console')
@@ -35,7 +46,7 @@ error("fatal: ", someMessage)
 
 ### `console.info(format, ...message)`
 
-Prints a formatted info message to stdout.
+Prints a formatted info message to `stdout`.
 
 ```js
 const { info } = require('ara-console')
