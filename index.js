@@ -1,5 +1,3 @@
-'use strict'
-
 const { error } = require('./error')
 const { info } = require('./info')
 const { warn } = require('./warn')

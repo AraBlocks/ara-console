@@ -1,5 +1,3 @@
-'use strict'
-
 const { bold, red } = require('chalk')
 const { log } = require('./log')
 

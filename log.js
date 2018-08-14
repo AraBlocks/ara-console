@@ -1,6 +1,9 @@
-'use strict'
+/* eslint-disable no-param-reassign */
 
-const { underline, dim, bgWhite, bold, black } = require('chalk')
+const {
+  bold,
+  black
+} = require('chalk')
 const util = require('util')
 
 const { stdout } = process
@@ -16,8 +19,8 @@ const { stdout } = process
  * @return {String}
  */
 function log(stream, prefix, format, ...message) {
-  if ('string' == typeof stream) {
-    return log(stdout, '', stream, prefix, ...[format, ...message])
+  if ('string' === typeof stream) {
+    return log(stdout, '', stream, prefix, ...[ format, ...message ])
   }
 
   if (null != prefix) { prefix = String(prefix) }
@@ -26,7 +29,7 @@ function log(stream, prefix, format, ...message) {
   if (!prefix) { prefix = '' }
   if (!format) { format = '' }
 
-  message = message.filter((m) => undefined !== m)
+  message = message.filter(m => undefined !== m)
   const string = util.format(format, ...message)
 
   stream.write(' ')
