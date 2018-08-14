@@ -44,12 +44,24 @@ info("fatal: ", someMessage)
 
 ### `console.warn(format, ...message)`
 
-Prints a formatted warn message to stderr.
+Prints a formatted warn message to `stderr`.
 
 ```js
 const { warn } = require('ara-console')
 warn("fatal: ", someMessage)
 ```
+
+## Contributing
+
+- [Commit message format](/.github/COMMIT_FORMAT.md)
+- [Commit message examples](/.github/COMMIT_FORMAT_EXAMPLES.md)
+- [How to contribute](/.github/CONTRIBUTING.md)
+
+Releases follow [Semantic Versioning](https://semver.org/)
+
+## See Also
+
+- [Log](https://goo.gl/6pm7Re)
 
 ## License
 
