@@ -1,4 +1,4 @@
-ara-console
+<img src="https://github.com/arablocks/ara-module-template/blob/master/ara.png" width="30" height="30" /> ara-console
 ===========
 
 Logging functions for Ara modules to ensure consistent console logs.
