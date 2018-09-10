@@ -17,7 +17,5 @@ module.exports = Object.assign(Console, Console())
 
 function prefixify(label, fn) {
   const prefix = bold(label ? `(${label}): ` : '')
-  return (...args) => {
-    return fn(prefix + args[0], ...args.slice(1))
-  }
+  return (...args) => fn(prefix + args[0], ...args.slice(1))
 }
