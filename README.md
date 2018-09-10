@@ -1,9 +1,12 @@
-ara-console
+<img src="https://github.com/AraBlocks/docs/blob/master/ara.png" width="30" height="30" /> ara-console
 ===========
+
+[![Build Status](https://travis-ci.com/AraBlocks/ara-console.svg?token=Ty4yTmKT8aELetQd1xZp&branch=master)](https://travis-ci.com/AraBlocks/ara-console)
 
 Logging functions for Ara modules to ensure consistent console logs.
 
 ## Status
+
 **Stable**
 
 ## Installation
@@ -21,6 +24,8 @@ $ node example.js
 ```
 
 ## API
+
+### `console = require('ara-console')([label])`
 
 This module exports a series of utility logging functions for use in
 several Ara modules.
