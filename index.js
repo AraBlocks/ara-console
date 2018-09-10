@@ -1,11 +1,23 @@
 const { error } = require('./error')
 const { info } = require('./info')
 const { warn } = require('./warn')
+const { bold } = require('chalk')
 const { log } = require('./log')
 
-module.exports = {
-  error,
-  info,
-  warn,
-  log,
+function Console(label) {
+  return {
+    error: prefixify(label, error),
+    info: prefixify(label, info),
+    warn: prefixify(label, warn),
+    log: prefixify(label, log),
+  }
+}
+
+module.exports = Object.assign(Console, Console())
+
+function prefixify(label, fn) {
+  const prefix = bold(label ? `(${label}): ` : '')
+  return (...args) => {
+    return fn(prefix + args[0], ...args.slice(1))
+  }
 }
