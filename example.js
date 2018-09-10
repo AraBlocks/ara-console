@@ -1,4 +1,4 @@
-const console = require('./')
+const console = require('./')(__filename)
 
 console.log('%s is a regular log', 'this')
 console.info('%s is info', 'this')
