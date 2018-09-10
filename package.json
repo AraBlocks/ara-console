@@ -1,6 +1,6 @@
 {
   "name": "ara-console",
-  "version": "0.1.2",
+  "version": "0.2.0",
   "description": "Logging functions for Ara modules so logging is consistent.",
   "main": "index.js",
   "scripts": {
