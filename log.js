@@ -29,7 +29,7 @@ function log(stream, prefix, format, ...message) {
   if (!prefix) { prefix = '' }
   if (!format) { format = '' }
 
-  message = message.filter(m => undefined !== m)
+  message = message.filter((m) => undefined !== m)
   const string = util.format(format, ...message)
 
   stream.write(' ')

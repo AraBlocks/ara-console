@@ -1,7 +1,7 @@
+const { bold } = require('chalk')
 const { error } = require('./error')
 const { info } = require('./info')
 const { warn } = require('./warn')
-const { bold } = require('chalk')
 const { log } = require('./log')
 
 function Console(label) {
